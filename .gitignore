@@ -1,0 +1,8 @@
+# ignore all .db files
+*.db
+
+#ignore all .xlsx files
+*.xlsx
+
+#ignore all .pdf files
+*.pdf
