@@ -1,6 +1,6 @@
 # Creating a Database for Customer Registration 
 
-## The fisrt version of the application has been created using the TKInter module
+## The fisrt version of the application has been created using the Python TKInter Module
 
 I've been looking forward to update the script and not to use TKInter, but I need to find a better way to create the frontend of the application. 
 
