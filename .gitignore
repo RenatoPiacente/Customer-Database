@@ -8,4 +8,4 @@
 *.pdf
 
 #ignores .DS_Store files
-*.DS_Store
+**/.DS_Store
