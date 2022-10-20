@@ -233,8 +233,9 @@ class Funcs:
         self.clear_screen()
 
     def generate_xml(self):
+        self.db_connection()
         os.system("open -a '/Applications/Microsoft Excel.app' 'VCF_Customers.xlsx'")
-
+        self.db_disconnect()
     def xml_report(self):
         self.clients_table.delete(*self.clients_table.get_children())
         self.db_connection()
@@ -247,6 +248,7 @@ class Funcs:
             clients_table = pd.DataFrame(clients_table, columns=['Code', 'First Name', 'Last Name', 'Id / RG',
                                                                  'CPF / SSN', 'Passport', 'E-mail', 'Phone',
                                                                  'Address', 'City', 'State', 'Zip Code', 'Country'])
+            self.conn.commit()
             clients_table.to_excel('VCF_Customers.xlsx')
         self.db_disconnect()
 
